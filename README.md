@@ -13,7 +13,9 @@ You must create an account on Spotify for Developer by this site: https://develo
 You must get your own client id and client secret and replace `clientId` and `clientSecret` on cell 8.
 
 ## Implementation
-The main function is `recommend_songs(song_list, spotify_data, dist_algo=None, super_like=None, n_songs=10)`
+The main function is 
+
+`recommend_songs(song_list, spotify_data, dist_algo=None, super_like=None, n_songs=10)`
 1. `song_list`: a song that you want to get recommendation.
 2. `spotify_data`: whole dataset from Spotify, generating recommendations from this reference
 3. `dist_algo`: default is None, but you must choose a distance algorithm, includes cosine, euclidean, manhattan, braycurtis, and canberra.
