@@ -6,12 +6,11 @@ This is an initial project of music recommend system, which includes normal and 
 The dataset is from Kaggle, you may access download the dataset from this site: https://www.kaggle.com/datasets/vatsalmavani/spotify-dataset
 
 ## Spotify credential
-You must create an account on Spotify for Developer by this site: https://developer.spotify.com/
+You must create an account on Spotify for Developer by this site: https://developer.spotify.com/.
 You must get your own client id anf client secret and replace `clientId` and `clientSecret` on cell 8.
 
 ## Implementation
-The main function is
-`def recommend_songs(song_list, spotify_data, dist_algo=None, super_like=None, n_songs=10)`
+The main function is `recommend_songs(song_list, spotify_data, dist_algo=None, super_like=None, n_songs=10)`
 1. `song_list`: a song that you want to get recommendation.
 2. `spotify_data`: whole dataset from Spotify, generating recommendation from this reference
 3. `dist_algo`: default is None, but you must choose a distance algorithm, includes cosine, euclidean, manhattan, braycurtis, and canberra.
